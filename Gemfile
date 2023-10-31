@@ -32,6 +32,8 @@ gem 'sass-rails', '~> 6.0'
 
 gem 'jquery-rails'
 gem 'devise'
+gem 'bootstrap_form'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
