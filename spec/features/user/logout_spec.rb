@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Login", :type => :feature do
   let(:user) { create(:user) }
 
-  scenario 'user navigates to the login page and succesfully logs in', js: true do
+  scenario 'user can successfully logout their account', js: true do
 # using the built-in devise method sign_in
     sign_in user
 
