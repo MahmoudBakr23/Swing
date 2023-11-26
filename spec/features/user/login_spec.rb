@@ -16,5 +16,4 @@ RSpec.feature "Login", :type => :feature do
     find('.login-button').click
     expect(page).to have_selector('#user-settings') # Check if there is an element on the page that matches the selector.
   end
-
 end
