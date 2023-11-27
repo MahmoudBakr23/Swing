@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :category do
-    name { "MyString" }
-    branch { "MyString" }
+    name { Faker::Internet.name }
+    branch { Faker::Internet.branch }
   end
 end
