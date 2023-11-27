@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Login", :type => :feature do
+RSpec.feature "Logout", :type => :feature do
   let(:user) { create(:user) }
 
   scenario 'user can successfully logout their account', js: true do

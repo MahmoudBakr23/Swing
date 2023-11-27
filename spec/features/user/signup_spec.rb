@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Login", :type => :feature do
+RSpec.feature "Signup", :type => :feature do
   let(:user) { build(:user) } # The build method comes from the FactoryBot. It creates and not save the instance.
 
   scenario 'user navigates to the signup page and succesfully signs up', js: true do
