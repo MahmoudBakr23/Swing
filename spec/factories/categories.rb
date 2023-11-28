@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :category do
-    name { Faker::Internet.name }
-    genre { Faker::Internet.genre }
+    name { Faker::Lorem.word }
+    genre { Faker::Lorem.word }
   end
 end
