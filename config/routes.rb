@@ -6,5 +6,8 @@ Rails.application.routes.draw do
     get 'login', to: 'devise/sessions#new'
     get 'users/sign_out', to: 'devise/sessions#destroy' # define the route matches [GET] "/users/sign_out
   end
+
+  resources :posts
+
   root "pages#index"
 end
