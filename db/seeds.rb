@@ -3,16 +3,25 @@
 #
 require 'faker'
 require 'factory_bot_rails'
+require 'database_cleaner'
+
+DatabaseCleaner.strategy = :truncation
+DatabaseCleaner.clean
+
+include FactoryBot::Syntax::Methods
 FactoryBot.definition_file_paths = [File.expand_path('../spec/factories', __dir__)]
 
-10.times do
-  FactoryBot.create(:user)
-end
-
-20.times do
-  FactoryBot.create(:category)
-end
+puts "Before seeding: #{User.count} users"
 
 10.times do
-  FactoryBot.create(:post)
+  create(:user)
 end
+
+puts "After seeding: #{User.count} users"
+# 15.times do
+#   create(:category)
+# end
+
+# 20.times do
+#   create(:post)
+# end
