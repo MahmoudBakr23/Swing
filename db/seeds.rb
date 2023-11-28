@@ -12,16 +12,19 @@ include FactoryBot::Syntax::Methods
 FactoryBot.definition_file_paths = [File.expand_path('../spec/factories', __dir__)]
 
 puts "Before seeding: #{User.count} users"
-
 10.times do
   create(:user)
 end
-
 puts "After seeding: #{User.count} users"
-# 15.times do
-#   create(:category)
-# end
-
-# 20.times do
-#   create(:post)
-# end
+puts "................................"
+puts "Before seeding: #{Category.count} categories"
+15.times do
+  create(:category)
+end
+puts "After seeding: #{Category.count} categories"
+puts "................................"
+puts "Before seeding: #{Post.count} posts"
+20.times do
+  create(:post)
+end
+puts "After seeding: #{Post.count} posts"
