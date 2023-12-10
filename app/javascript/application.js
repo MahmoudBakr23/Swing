@@ -1,3 +1,5 @@
-//= require jquery
-//= require bootstrap-sprockets
-import "./styles/posts";
+//= require bootstrap
+//= require_tree .
+//= require_self
+import "@hotwired/turbo-rails"
+import "jquery";

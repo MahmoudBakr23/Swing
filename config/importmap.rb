@@ -1,5 +1,9 @@
 # Pin npm packages by running ./bin/importmap
 
 pin "application", preload: true
-pin "@hotwired/stimulus", to: "stimulus.js"
-pin_all_from "app/javascript/styles", under: "styles"
+# pin "@hotwired/stimulus", to: "stimulus.js"
+pin "jquery", to: "https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"
+pin "@popperjs/core", to: "https://unpkg.com/@popperjs/core@2.11.2/dist/esm/index.js"
+pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
+pin_all_from "app/javascript/styles", under: "styles", preload: true
+pin_all_from "app/javascript/logic", under: "logic", preload: true
